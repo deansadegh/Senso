@@ -24,7 +24,8 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.loginFragment ||
-                destination.id == R.id.splashFragment
+                destination.id == R.id.splashFragment||
+                destination.id==R.id.forgotpassFragment
             ) {
                 binding.bottomNav.visibility = View.GONE
             } else {

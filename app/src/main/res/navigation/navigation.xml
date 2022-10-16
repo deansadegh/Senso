@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_loginFragment_to_profileFragment4"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotpassFragment"
+            app:destination="@id/forgotpassFragment" />
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
@@ -69,4 +72,9 @@
         android:name="com.example.usersensorik.explore.ExplorehomeFragment"
         android:label="fragment_explore_home"
         tools:layout="@layout/fragment_explore_home" />
+    <fragment
+        android:id="@+id/forgotpassFragment"
+        android:name="com.example.usersensorik.login.ForgotpassFragment"
+        android:label="fragment_forgotpass"
+        tools:layout="@layout/fragment_forgotpass" />
 </navigation>

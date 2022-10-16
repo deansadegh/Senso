@@ -45,6 +45,9 @@ class LoginFragment : Fragment() {
             viewModel.loginUser(binding.loginUser.text.toString(),binding.passwordUser.text.toString())
 
         }
+        binding.forgot.setOnClickListener {
+            findNavController().navigate(R.id.forgotpassFragment)
+        }
     }
     private fun subsciber() {
         viewModel.userNameLiveDataMessage.observe(viewLifecycleOwner) { message ->
@@ -66,6 +69,6 @@ class LoginFragment : Fragment() {
             }
 
         }
-
     }
+
 }
