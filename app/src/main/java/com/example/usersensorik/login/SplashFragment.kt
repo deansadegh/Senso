@@ -34,7 +34,7 @@ lateinit var binding: FragmentSplashBinding
             if ( shared.getBoolean("login" , false ))
                 findNavController().navigate(R.id.homeFragment)
             else
-                findNavController().navigate(R.id.homeFragment)
+                findNavController().navigate(R.id.loginFragment)
         }
     }
 

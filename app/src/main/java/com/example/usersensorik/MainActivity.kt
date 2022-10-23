@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var navController: NavController
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // setContentView(R.layout.activity_main)
         binding = inflate(layoutInflater)
         setContentView(binding.root)
         val navHostFragment =
@@ -25,8 +24,10 @@ class MainActivity : AppCompatActivity() {
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.loginFragment ||
                 destination.id == R.id.splashFragment||
-                destination.id==R.id.forgotpassFragment
-            ) {
+                destination.id==R.id.forgotpassFragment||
+                destination.id==R.id.chengepasswordFragment
+
+                    ) {
                 binding.bottomNav.visibility = View.GONE
             } else {
                 binding.bottomNav.visibility = View.VISIBLE
@@ -36,9 +37,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         if (navController.currentDestination?.id == R.id.loginFragment||
-            navController.currentDestination?.id == R.id.homeFragment
-           // navController.currentDestination?.id == R.id. ||
-           // navController.currentDestination?.id == R.id.
+            navController.currentDestination?.id == R.id.homeFragment||
+            navController.currentDestination?.id == R.id.profileFragment ||
+           navController.currentDestination?.id == R.id.chengepasswordFragment
         )
             finish()
         super.onBackPressed()

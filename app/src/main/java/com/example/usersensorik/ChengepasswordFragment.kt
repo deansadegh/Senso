@@ -25,7 +25,7 @@ class ChengepasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.cancelBtn.setOnClickListener {
-            findNavController().navigate(R.id.profileFragment)
+            findNavController().navigate(R.id.homeFragment)
         }
 
     }
