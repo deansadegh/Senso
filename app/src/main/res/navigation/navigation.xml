@@ -77,4 +77,9 @@
         android:name="com.example.usersensorik.login.ForgotpassFragment"
         android:label="fragment_forgotpass"
         tools:layout="@layout/fragment_forgotpass" />
+    <fragment
+        android:id="@+id/chengepasswordFragment"
+        android:name="com.example.usersensorik.ChengepasswordFragment"
+        android:label="fragment_chengepassword"
+        tools:layout="@layout/fragment_chengepassword" />
 </navigation>

@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -50,6 +51,13 @@ class ForgotpassFragment : Fragment() {
             binding.loginUserBtn.error = message
             Log.e("Forget",message)
 
+        }
+        viewModel.loginforget.observe(viewLifecycleOwner){
+            if (it=="")
+                findNavController().navigate(R.id.loginFragment)
+            else{
+                Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

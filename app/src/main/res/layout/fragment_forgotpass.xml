@@ -23,17 +23,13 @@
     <View
         android:id="@+id/view2"
         android:layout_width="379dp"
-        android:layout_height="787dp"
+        android:layout_height="462dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="300dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/helf"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.245" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_user_btn"
@@ -72,21 +68,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="605dp" />
+        app:layout_constraintGuide_end="99dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="208dp" />
+        app:layout_constraintGuide_percent="0.27" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/forgot"
         android:layout_width="344dp"
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/corner"
         android:backgroundTint="@color/sormh"
@@ -94,19 +90,20 @@
         android:text="Login"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/login_user_btn"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="@+id/login_user_btn"
         app:layout_constraintTop_toBottomOf="@+id/login_user_btn" />
 
     <TextView
-        android:textStyle="bold"
-        android:textColor="@color/black"
         android:id="@+id/backlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:text="Backlogin"
+        android:textColor="@color/black"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="@+id/forgot"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="@+id/forgot"
         app:layout_constraintTop_toBottomOf="@+id/forgot" />
 
@@ -123,14 +120,14 @@
         app:srcCompat="@drawable/group" />
 
     <TextView
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:textColor="@color/sormh"
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Sensorik"
+        android:layout_marginTop="14dp"
+        android:text="sensorik"
+        android:textColor="@color/sormh"
+        android:textSize="15dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView5"
         app:layout_constraintStart_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
@@ -153,11 +150,24 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="Contact us"
-        android:textColor="#1B5E20"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="363dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/forgot"
+        app:layout_constraintStart_toStartOf="@+id/forgot"
+        app:layout_constraintTop_toBottomOf="@+id/backlogin"
         app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

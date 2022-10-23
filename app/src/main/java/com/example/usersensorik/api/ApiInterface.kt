@@ -9,7 +9,7 @@ import retrofit2.http.POST
 interface ApiInterface {
     @POST("/v1/auth/login")
     suspend fun login(@Body signInRequestPostDto: SignInRequestPostDto): Response<LoginResponse>
-    @POST("/v1/auth/foget-password")
+    @POST("/v1/auth/forget-password")
     suspend fun forgot(@Body signInRequestPostDto: SignInRequestPostDto): Response<LoginResponse>
 
 }

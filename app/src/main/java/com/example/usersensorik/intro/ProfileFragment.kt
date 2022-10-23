@@ -24,6 +24,9 @@ class ProfileFragment : Fragment() {
         binding.exitBtn.setOnClickListener {
 
             findNavController().navigate(R.id.loginFragment)
+        }
+        binding.Chengepasswordbtn.setOnClickListener{
+            findNavController().navigate(R.id.chengepasswordFragment)
             val edit = shared.edit()
             edit.putBoolean("login",false )
             edit.apply()

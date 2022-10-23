@@ -5,6 +5,7 @@
     <item android:title="Explore"
 android:id="@+id/exploreFragment"
         android:icon="@drawable/ic_person"
+        
         />
     <item android:title="Home"
         android:id="@+id/homeFragment"

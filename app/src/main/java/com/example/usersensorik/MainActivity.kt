@@ -37,8 +37,8 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
         if (navController.currentDestination?.id == R.id.loginFragment||
             navController.currentDestination?.id == R.id.homeFragment
-           // navController.currentDestination?.id == R.id.profile ||
-           // navController.currentDestination?.id == R.id.persen
+           // navController.currentDestination?.id == R.id. ||
+           // navController.currentDestination?.id == R.id.
         )
             finish()
         super.onBackPressed()

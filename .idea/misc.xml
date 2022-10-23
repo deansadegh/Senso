@@ -3,10 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Senso/app/src/main/res/drawable-v24/editt.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable-v24/helf.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable-v24/ic_arc.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable-v24/navbotten.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable/abikam.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable/ic_active_checkbox.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable/ic_alert_info.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable/ic_profile.xml" value="0.1555" />
+        <entry key="..\:/Senso/app/src/main/res/drawable/khakestari.xml" value="0.1555" />
         <entry key="..\:/Senso/app/src/main/res/layout/activity_main.xml" value="0.2520833333333333" />
-        <entry key="..\:/Senso/app/src/main/res/layout/fragment_forgotpass.xml" value="0.2520833333333333" />
-        <entry key="..\:/Senso/app/src/main/res/layout/fragment_login.xml" value="0.2520833333333333" />
-        <entry key="..\:/Senso/app/src/main/res/layout/fragment_profile.xml" value="0.2520833333333333" />
+        <entry key="..\:/Senso/app/src/main/res/layout/card_view_design.xml" value="0.25625" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_chengepassword.xml" value="0.264" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_explore.xml" value="0.25416666666666665" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_explore_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_forgotpass.xml" value="0.4" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_home.xml" value="0.25625" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Senso/app/src/main/res/layout/fragment_splash.xml" value="0.25625" />
+        <entry key="..\:/Senso/app/src/main/res/menu/menu_btn.xml" value="0.25625" />
         <entry key="..\:/UserSensorik/app/src/main/res/drawable-v24/helf.xml" value="0.142" />
         <entry key="..\:/UserSensorik/app/src/main/res/drawable-v24/ic_arc.xml" value="0.142" />
         <entry key="..\:/UserSensorik/app/src/main/res/drawable-v24/ic_baseline_folder_24.xml" value="0.142" />

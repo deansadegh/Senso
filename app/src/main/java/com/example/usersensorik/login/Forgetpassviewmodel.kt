@@ -33,7 +33,7 @@ class Forgotpassviewmodel :ViewModel() {
             val apiInterface = retrofit.create(ApiInterface::class.java)
             viewModelScope.launch {
                 try {
-                    val response = apiInterface.forgot(SignInRequestPostDto(userName = userName))
+                    val response = apiInterface.forgot(SignInRequestPostDto(email = userName))
                     if (response.isSuccessful()) {
                         loginforget.value = ""
                         Log.e("Login ", response.message())
