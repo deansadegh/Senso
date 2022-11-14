@@ -59,10 +59,10 @@ class LoginFragment : Fragment() {
             binding.passwordUser.error = message
         }
         viewModel.loginUser.observe(viewLifecycleOwner) {
-            if (it==""){
+            if (it == "") {
                 val edit = shared.edit()
                 edit.putBoolean("login", true)
-                findNavController().navigate(R.id.homeFragment)
+                findNavController().navigate(R.id.profileFragment)
                 edit.apply()
             }else{
                 Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()

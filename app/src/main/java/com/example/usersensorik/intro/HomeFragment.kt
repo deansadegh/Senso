@@ -30,12 +30,7 @@ class HomeFragment : Fragment() {
 
         data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click","فرگمنت چیست؟ چگونه یک فرگمنت اندروید بسازیم؟"))
         data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click","رویکرد جدید؛ یک اکتیویتی برای هر اپلیکیشن کافیه! "))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","معماری ها در اندروید"))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","گیت چیست و چگونه از آن استفاده کنیم؟"))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","درامد در چهار روز"))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","گیت چیست و چگونه از آن استفاده کنیم؟"))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","گیت چیست و چگونه از آن استفاده کنیم؟"))
-        data.add(listmodel(R.drawable.ic_baseline_folder_24, "Click ","گیت چیست و چگونه از آن استفاده کنیم؟"))
+
 
 
         // This will pass the ArrayList to our Adapter

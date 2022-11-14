@@ -2,18 +2,19 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Explore"
-android:id="@+id/exploreFragment"
-        android:icon="@drawable/ic_person"
-        
+    <item android:title="Profile"
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_person_outline_24"
         />
     <item android:title="Home"
         android:id="@+id/homeFragment"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_baseline_list_alt_24"
 
         />
-    <item android:title="Profile"
-        android:icon="@drawable/ic_settings"
-        android:id="@+id/profileFragment"
+
+    <item android:title="Explore"
+        android:id="@+id/exploreFragment"
+        android:icon="@drawable/ic_baseline_menu_book_24"
+
         />
 </menu>

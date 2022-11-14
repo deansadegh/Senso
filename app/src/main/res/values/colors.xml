@@ -11,7 +11,7 @@
     <color name="sormh">#003366</color>
     <color name="khacestari">#686860</color>
     <color name="Abi">#477488</color>
-<color name="abikam">#4db3b3</color>
+    <color name="abikam">#4db3b3</color>
     <color name="colorPrimary">#012050</color>
     <color name="colorPrimaryVariant">#011D45</color>
     <color name="colorOnPrimary">#14142B</color>
@@ -20,7 +20,6 @@
     <color name="colorSecondaryVariant">#FDD900</color>
     <color name="colorOrange">#FFC925</color>
     <color name="colorOnSecondary">#14142B</color>
-
 
 
     <color name="primary_5">#012050</color>

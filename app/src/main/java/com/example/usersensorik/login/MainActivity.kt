@@ -1,4 +1,4 @@
-package com.example.usersensorik
+package com.example.usersensorik.login
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

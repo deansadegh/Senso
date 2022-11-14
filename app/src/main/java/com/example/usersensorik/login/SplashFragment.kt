@@ -30,8 +30,8 @@ lateinit var binding: FragmentSplashBinding
     fun splash() {
 
         lifecycleScope.launchWhenCreated {
-            delay(1000)
-            if ( shared.getBoolean("login" , false ))
+            delay(2000)
+            if (shared.getBoolean("login", true))
                 findNavController().navigate(R.id.homeFragment)
             else
                 findNavController().navigate(R.id.loginFragment)
