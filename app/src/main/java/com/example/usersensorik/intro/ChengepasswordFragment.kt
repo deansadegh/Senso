@@ -51,7 +51,7 @@ class ChengepasswordFragment : Fragment() {
 
         }
         binding.cancelBtn.setOnClickListener {
-            findNavController().navigate(R.id.homeFragment)
+            findNavController().popBackStack()
         }
 
         binding.save.setOnClickListener {

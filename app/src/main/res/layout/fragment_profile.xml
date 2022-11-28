@@ -52,7 +52,7 @@
             app:boxStrokeColor="@color/black"
             app:counterMaxLength="10"
             app:endIconMode="clear_text"
-            app:errorEnabled="true"
+            app:errorEnabled="false"
             app:errorIconDrawable="@drawable/ic_error"
             app:helperTextTextColor="@color/teal_700"
             app:layout_constraintBottom_toTopOf="@+id/Chengepasswordbtn"
@@ -103,7 +103,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/exitBtn"
             android:layout_width="0dp"
-            android:layout_height="46dp"
+            android:layout_height="48dp"
             android:layout_marginStart="80dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="80dp"

@@ -12,5 +12,11 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+            <item name="textAllCaps">false</item>
+            <item name="android:textAllCaps">false</item>
+            <item name="android:gravity">left|center_vertical</item>
+
+
     </style>
 </resources>

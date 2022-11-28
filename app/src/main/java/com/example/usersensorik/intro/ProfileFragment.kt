@@ -22,14 +22,12 @@ class ProfileFragment : Fragment() {
         shared =requireContext().getSharedPreferences("Test" , Context.MODE_PRIVATE)
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         binding.exitBtn.setOnClickListener {
-
+              shared.edit().putBoolean("login",false ).apply()
             findNavController().navigate(R.id.loginFragment)
         }
         binding.Chengepasswordbtn.setOnClickListener{
             findNavController().navigate(R.id.chengepasswordFragment)
-            val edit = shared.edit()
-            edit.putBoolean("login",false )
-            edit.apply()
+
         }
 
         return binding.root

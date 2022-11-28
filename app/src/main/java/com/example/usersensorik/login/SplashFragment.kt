@@ -3,6 +3,7 @@ package com.example.usersensorik.login
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -22,20 +23,23 @@ lateinit var binding: FragmentSplashBinding
     ): View? {
         shared = requireContext().getSharedPreferences("Test" , Context.MODE_PRIVATE)
 
-        splash()
         binding = FragmentSplashBinding.inflate(inflater, container, false)
-
+        splash()
         return binding.root
     }
+
     fun splash() {
 
         lifecycleScope.launchWhenCreated {
-            delay(2000)
-            if (shared.getBoolean("login", true))
+            delay(1000)
+            Log.e(SplashFragment::class.java.name,"Login state is ${shared.getBoolean("login",false)}")
+            if (shared.getBoolean("login", false))
                 findNavController().navigate(R.id.homeFragment)
             else
                 findNavController().navigate(R.id.loginFragment)
-        }
+
+
+                }
     }
 
 }

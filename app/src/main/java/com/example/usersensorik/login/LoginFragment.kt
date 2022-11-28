@@ -3,6 +3,7 @@ package com.example.usersensorik.login
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -60,12 +61,11 @@ class LoginFragment : Fragment() {
         }
         viewModel.loginUser.observe(viewLifecycleOwner) {
             if (it == "") {
-                val edit = shared.edit()
-                edit.putBoolean("login", true)
-                findNavController().navigate(R.id.profileFragment)
-                edit.apply()
-            }else{
-                Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
+                shared.edit().putBoolean("login", true).apply()
+                findNavController().navigate(R.id.homeFragment)
+                Log.e(LoginFragment::class.java.name,"Login state is ${shared.getBoolean("login",false)}")
+            } else {
+                Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
             }
 
         }
