@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.usersensorik.R
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment) as NavHostFragment
         navController = navHostFragment.navController
-        binding.bottomNav.setupWithNavController(navController)
+        binding.bottomNavigationView.setupWithNavController(navController)
         navController.addOnDestinationChangedListener { _, destination, _ ->
             if (destination.id == R.id.loginFragment ||
                 destination.id == R.id.splashFragment||
@@ -28,10 +29,16 @@ class MainActivity : AppCompatActivity() {
                 destination.id==R.id.chengepasswordFragment
 
                     ) {
-                binding.bottomNav.visibility = View.GONE
+                binding.bottomNavigationView.visibility = View.GONE
+                binding.questionnaires.visibility=View.GONE
             } else {
-                binding.bottomNav.visibility = View.VISIBLE
+                binding.questionnaires.visibility=View.VISIBLE
+                binding.bottomNavigationView.visibility = View.VISIBLE
             }
+
+        }
+        binding.questionnaires.setOnClickListener {
+            binding.bottomNavigationView.selectedItemId = R.id.homeFragment
         }
     }
 
@@ -39,7 +46,8 @@ class MainActivity : AppCompatActivity() {
         if (navController.currentDestination?.id == R.id.loginFragment||
             navController.currentDestination?.id == R.id.homeFragment||
             navController.currentDestination?.id == R.id.profileFragment ||
-           navController.currentDestination?.id == R.id.chengepasswordFragment
+           navController.currentDestination?.id == R.id.chengepasswordFragment||
+            navController.currentDestination?.id == R.id.tabFragment
         )
             finish()
         super.onBackPressed()

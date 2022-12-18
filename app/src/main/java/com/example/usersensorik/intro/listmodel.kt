@@ -1,4 +1,7 @@
 package com.example.usersensorik.intro
 
-data class listmodel(val image: Int, val text: String, val description: String) {
-}
+import android.os.Parcel
+import android.os.Parcelable
+import java.io.Serializable
+
+data class listmodel(val image: Int, val text: String, val description: String):Serializable

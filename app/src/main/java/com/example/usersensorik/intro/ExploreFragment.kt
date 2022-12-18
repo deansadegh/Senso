@@ -1,5 +1,6 @@
 package com.example.usersensorik.intro
 
+import com.example.usersensorik.intro.QuestionFragment.Companion.TRANSFER
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,6 +20,8 @@ class ExploreFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val getData = arguments?.get(TRANSFER)
+
         val titles = listOf("Home","chat","Setting")
         binding.viewPager.adapter = activity?.let { Adaptor(it) }
         TabLayoutMediator(binding.tabLayout, binding.viewPager)

@@ -5,10 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.usersensorik.R
 
-class castomAdapter(private val mList: List<listmodel>) : RecyclerView.Adapter<castomAdapter.ViewHolder>() {
+class castomAdapter(private val mList: List<listmodel>,private var onclick:((Int) -> Unit)) : RecyclerView.Adapter<castomAdapter.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -31,6 +32,9 @@ class castomAdapter(private val mList: List<listmodel>) : RecyclerView.Adapter<c
         // sets the text to the textview from our itemHolder class
         holder.textView.text = itemsViewModel.text
         holder.textDescription.text = itemsViewModel.description
+        holder.leyout.setOnClickListener{
+            onclick(position)
+        }
 
     }
 
@@ -44,5 +48,7 @@ class castomAdapter(private val mList: List<listmodel>) : RecyclerView.Adapter<c
         val imageView: ImageView = itemView.findViewById(R.id.imageView3)
         val textView: TextView = itemView.findViewById(R.id.text_title)
         val textDescription: TextView = itemView.findViewById(R.id.txt_description)
+        val leyout: ConstraintLayout = itemView.findViewById(R.id.parent_layout)
+
     }
 }

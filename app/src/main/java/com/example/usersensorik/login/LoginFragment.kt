@@ -49,6 +49,7 @@ class LoginFragment : Fragment() {
         binding.forgot.setOnClickListener {
             findNavController().navigate(R.id.forgotpassFragment)
         }
+
     }
     private fun subsciber() {
         viewModel.userNameLiveDataMessage.observe(viewLifecycleOwner) { message ->
